@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="plugin.video.zeltorix.anilibria" version="0.0.110" name="Project AniLibria" provider-name="Zeltorix">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="xbmc.gui" version="5.15.0" />
+        <import addon="xbmc.addon" version="18.9.701" />
+        <import addon="script.module.requests" version="2.27.1+matrix.1" />
+        <import addon="script.module.yt_dlp" version="0.0.1" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">For site AniLibria</summary>
+        <summary lang="ru_RU">Для сайта AniLibria</summary>
+        <description lang="en_GB">To watch anime on the AniLibria project</description>
+        <description lang="ru_RU">Для просмотра аниме на проекте AniLibria</description>
+        <disclaimer lang="en_GB">For Kodi «Matrix» 19</disclaimer>
+        <disclaimer lang="ru_RU">Для Kodi «Matrix» 19</disclaimer>
+        <news>
+            v0.0.2~alpha+matrix.1 (2023-01-20)
+                [new] Добавлено
+                [fix] Подорожник к пропуску сцен
+            v0.0.1~alpha+matrix.1 (2023-01-14)
+                [new] Добавлено
+        </news>
+        <platform>all</platform>
+        <language>ru en
+        </language> 
+        <license>GPL-3-or-later</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=xxxx</forum> 
+        <source>https://github.com/zeltorix/repository_for_kodi/raw/main/source/release/plugin_video_zeltorix_anilibria</source>
+        <assets>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <debugging>true</debugging>
+    </extension>
+</addon><addon id="repository.zeltorix" name="ZelToRiX Add-on repository" version="0.0.25" provider-name="ZelToRiX">
+  <extension point="xbmc.addon.repository" name="ZelToRiX Add-on repository">
+    <dir minversion="19.0.0">
+      <info compressed="false">https://raw.githubusercontent.com/zeltorix/repository_for_kodi/main/repository/release/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/zeltorix/repository_for_kodi/main/repository/release/addons.xml.md5</checksum>
+      <datadir zip="true">https://github.com/zeltorix/repository_for_kodi/raw/main/repository/release/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Install Add-ons from ZelToRiX repository</summary>
+    <summary lang="ru">Установить дополнения от ZelToRiX</summary>
+    <description lang="en">Download and install add-ons from the ZelToRiX add-on repository</description>
+    <description lang="ru">Репозитории дополнений для разных проектов.</description>
+    <source>https://github.com/zeltorix/repository_for_kodi/raw/main/source/release/repository_zeltorix</source>
+    <platform>all</platform>
+    <news>
+      v0.0.6 (2023-01-30)
+      [new] Эксперименты с репозиторием
+      [fix] Наконец-то всё работает не только у меня
+      v0.0.1 (2023-01-27)
+      [new] Создание репозитории для Kodi 19
+      [fix] ...
+    </news>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.jpg</icon>
+    </assets>
+  </extension>
+</addon><addon id="repository.zeltorix.develop" name="ZelToRiX DEV Add-on repository" version="0.0.18" provider-name="ZelToRiX">
+  <extension point="xbmc.addon.repository" name="ZelToRiX DEV Add-on repository">
+    <dir minversion="19.0.0">
+      <info compressed="false">https://raw.githubusercontent.com/Zeltorix/repository_for_kodi/main/repository/develop/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Zeltorix/repository_for_kodi/main/repository/develop/addons.xml.md5</checksum>
+      <datadir zip="true">https://github.com/Zeltorix/repository_for_kodi/raw/main/repository/develop/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Install Add-ons from ZelToRiX DEV repository</summary>
+    <summary lang="ru">Установить дополнения от ZelToRiX DEV</summary>
+    <description lang="en">Download and install add-ons from the ZelToRiX add-on repository</description>
+    <description lang="ru">Репозитория с попытками создать плагины</description>
+    <source>https://github.com/zeltorix/repository_for_kodi/raw/main/source/develop/repository.zeltorix.develop</source>
+    <platform>all</platform>
+    <news>
+      v0.0.1 (2023-01-27)
+      [new] Создание репозитории для Kodi 19
+      [fix] ...
+    </news>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.jpg</icon>
+    </assets>
+  </extension>
+</addon><addon id="script.module.yt_dlp" name="yt_dlp" version="0.0.11" provider-name="ZelToRiX">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="resources/lib" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">yt-dlp - это форк youtube-dl</summary>
+        <description lang="en_GB">yt-dlp - это форк youtube-dl, основанный на теперь неактивном youtube-dlc. Основное
+            внимание в этом проекте уделяется добавлению новых функций и патчей, а также отслеживанию оригинального
+            проекта.
+        </description>
+    </extension>
+</addon></addons>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="repository.zeltorix.develop" name="ZelToRiX DEV Add-on repository" version="0.0.16" provider-name="ZelToRiX">
+  <extension point="xbmc.addon.repository" name="ZelToRiX DEV Add-on repository">
+    <dir minversion="19.0.0">
+      <info compressed="false">https://raw.githubusercontent.com/Zeltorix/repository_for_kodi/main/repo_develop/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Zeltorix/repository_for_kodi/main/repo_develop/addons.xml.md5</checksum>
+      <datadir zip="true">https://github.com/Zeltorix/repository_for_kodi/raw/main/repo_develop/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Install Add-ons from ZelToRiX DEV repository</summary>
+    <summary lang="ru">Установить дополнения от ZelToRiX DEV</summary>
+    <description lang="en">Download and install add-ons from the ZelToRiX add-on repository</description>
+    <description lang="ru">Репозитория с попытками создать плагины</description>
+    <source>https://github.com/zeltorix/repository_for_kodi/raw/main/source/develop/repository.zeltorix.develop</source>
+    <platform>all</platform>
+    <news>
+      v0.0.1 (2023-01-27)
+      [new] Создание репозитории для Kodi 19
+      [fix] ...
+    </news>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.jpg</icon>
+    </assets>
+  </extension>
+</addon><addon id="plugin.video.zeltorix.xrenb.tv" name="хРЕНь.ТВ" version="0.0.31" provider-name="Zeltorix">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="xbmc.gui" version="5.15.0" />
+        <import addon="xbmc.addon" version="18.9.701" />
+        <import addon="script.module.requests" version="2.27.1+matrix.1" />
+        <import addon="script.module.yt_dlp" version="0.0.1" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.video" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">For site xRENb TV</summary>
+        <summary lang="ru_RU">Для сайта ХРЕНЬ ТВ</summary>
+        <description lang="en_GB">To watch video on the xRENb.TV project</description>
+        <description lang="ru_RU">Для просмотра видео на проекте ХРЕНЬ ТВ</description>
+        <disclaimer lang="en_GB">For Kodi «Matrix» 19</disclaimer>
+        <disclaimer lang="ru_RU">Для Kodi «Matrix» 19</disclaimer>
+        <news>
+            v0.0.1 (2023-03-01)
+                [new]
+                [fix]
+        </news>
+        <platform>all</platform>
+        <language>ru en
+        </language> 
+        <license>GPL-3-or-later</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=xxxx</forum> 
+        <source>https://github.com/zeltorix/repository_for_kodi/raw/main/source/develop/xrenb_tv</source>
+        <assets>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <debugging>true</debugging>
+    </extension>
+</addon></addons>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addon id="script.module.yt_dlp" name="yt_dlp" version="0.0.11" provider-name="ZelToRiX">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="resources/lib" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">yt-dlp - это форк youtube-dl</summary>
+        <description lang="en_GB">yt-dlp - это форк youtube-dl, основанный на теперь неактивном youtube-dlc. Основное
+            внимание в этом проекте уделяется добавлению новых функций и патчей, а также отслеживанию оригинального
+            проекта.
+        </description>
+    </extension>
+</addon>

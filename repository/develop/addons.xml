@@ -24,7 +24,7 @@
       <icon>icon.jpg</icon>
     </assets>
   </extension>
-</addon><addon id="plugin.video.zeltorix.xrenb.tv" name="хРЕНь.ТВ" version="0.0.31" provider-name="Zeltorix">
+</addon><addon id="plugin.video.zeltorix.xrenb.tv" name="хРЕНь.ТВ" version="0.0.32" provider-name="Zeltorix">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="xbmc.gui" version="5.15.0" />

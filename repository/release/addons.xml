@@ -90,7 +90,7 @@
       <icon>icon.jpg</icon>
     </assets>
   </extension>
-</addon><addon id="script.module.yt_dlp" name="yt_dlp" version="0.0.11" provider-name="ZelToRiX">
+</addon><addon id="script.module.yt_dlp" name="yt_dlp" version="0.0.12" provider-name="ZelToRiX">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>
